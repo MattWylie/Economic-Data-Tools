@@ -51,15 +51,15 @@
     }
 
     .card {
-      background: rgba(22, 27, 34, 0.85);
-      border: 1px solid rgba(255, 255, 255, 0.07);
+      background: linear-gradient(145deg, #1c2333 0%, #161b22 100%);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 16px;
       padding: 36px 32px;
       text-decoration: none;
       color: inherit;
       transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
       display: block;
-      backdrop-filter: blur(6px);
+      box-shadow: 0 2px 16px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.05);
     }
 
     .card:hover {
@@ -77,6 +77,13 @@
       font-weight: 600;
       color: #e6edf3;
       transition: color 0.2s;
+    }
+
+    .card-icon {
+      font-size: 2rem;
+      margin-bottom: 14px;
+      display: block;
+      line-height: 1;
     }
 
     footer {
@@ -100,7 +107,13 @@
   <div class="grid">
 
     <a class="card" href="africa-health-spending.html">
+      <span class="card-icon">🩺</span>
       <h2>Sub-Saharan Africa Healthcare Spending</h2>
+    </a>
+
+    <a class="card" href="africa-debt-sustainability.html">
+      <span class="card-icon">🏦</span>
+      <h2>DRAFT (Bad Data): Sub-Saharan Africa Debt Sustainability Index</h2>
     </a>
 
     <!-- Add more app cards here as you build them -->
